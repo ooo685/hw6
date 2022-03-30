@@ -35,4 +35,4 @@ def name():
         return "OK"
 
 if __name__ == 'main':
-    app.run()
+    app.run(host="0.0.0.0")

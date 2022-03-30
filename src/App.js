@@ -23,7 +23,7 @@ class NameForm extends React.Component {
   handleSubmit(event) {
     event.preventDefault();
     
-    fetch('/name', {
+    fetch('http://localhost/name', {
       method:"POST",
       cache: "no-cache",
       headers:{
@@ -32,7 +32,7 @@ class NameForm extends React.Component {
       body:JSON.stringify(this.state.fname)
       }
     ).then(response => {
-      fetch('/name', {
+      fetch('http://localhost/name', {
        method:"GET"}
      )
        .then(response => response.json())
