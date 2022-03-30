@@ -17,8 +17,8 @@ def name():
     #get request
     if request.method == "GET":
         #get name from query param
-        #fname = request.args.get("fname") wasn't working for some reason
-        fname = finame["fname"]
+        fname = request.args.get("fname") wasn't working for some reason
+        #fname = finame["fname"]
         #print(fname)
         #if name is in db, return last name
         if fname in db:
@@ -31,7 +31,7 @@ def name():
         data = request.json
         #print(data)
         #set fname and lname in db
-        finame["fname"] = data
+        #finame["fname"] = data
         return "OK"
 
 if __name__ == 'main':
